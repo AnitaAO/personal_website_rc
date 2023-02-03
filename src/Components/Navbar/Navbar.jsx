@@ -1,5 +1,6 @@
 import React from "react";
-import "./Navbar.css"
+import "./Navbar.css";
+import Toggle from "../Toggle/Toggle";
 
 const Navbar = () => {
     return (
