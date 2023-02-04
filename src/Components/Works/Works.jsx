@@ -5,15 +5,24 @@ import Fiverr from '../../img/fiverr.png';
 import Amazon from '../../img/amazon.png';
 import Shopify from '../../img/Shopify.png';
 import Facebook from '../../img/Facebook.png';
+import { themeContext } from '../../Context';
+import { useContext } from 'react';
 
 const Works = () => {
+
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
   return (
     <div className="works">
         {/* this is left side */}
         <div className='awesome w-left'>
-            <span>Worked for all these</span>
+            <span style={{color: darkMode? 'white': ''}} 
+            >Worked for all these</span>
             <span>Brands & Clients</span>
-            <span>
+            <span 
+                style={{color: darkMode? '#fbfafa': ''}}
+            >
                 I and a team of others built a Retail Managemnet 
                 System using React, Typescript, Material UI 
                 and Python for the backend for Prunedge Technolodies

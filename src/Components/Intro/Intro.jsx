@@ -10,15 +10,19 @@ import Thumbup from "../../img/thumbup.png";
 import Crown from "../../img/crown.png";
 import Glassesemoji from "../../img/glassesimoji.png";
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
+import { themeContext } from '../../Context';
+import { useContext } from 'react';
 
 const Intro = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
   return (
     <div className="intro">
         <div className="i-left">
         <div className="i-name">
-                <span>Hey! I am</span>
+                <span style={{color: darkMode? 'white': ''}} >Hey! I am</span>
                 <span>Amarachi Ajah</span>
-                <span>
+                <span style={{color: darkMode? '#fbfafa': ''}}>
                     I specialise in digital product design and 
                     front-end web development. I am a multidisciplinary 
                     and talented Nigerian based in Lagos. I am passionate 
@@ -44,7 +48,9 @@ const Intro = () => {
             <img src={Vector2} alt='vector' />
             <img src={Boy} alt='vector' />
             <img src={Glassesemoji} alt='emoji' />
-            <div style={{top: '-5%', left: '58%'}}>
+            <div style={{top: '-5%', left: '58%', 
+                // color: darkMode? 'black': ''
+                }}>
                 <FloatingDiv 
                 image={Crown}
                 txt1 = {'Web'}
