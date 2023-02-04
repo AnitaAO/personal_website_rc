@@ -12,10 +12,15 @@ import Glassesemoji from "../../img/glassesimoji.png";
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
+import { motion } from 'framer-motion';
 
 const Intro = () => {
+
+    const transition = {duration: 2, type: 'spring'};
+
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
+
   return (
     <div className="intro">
         <div className="i-left">
@@ -47,23 +52,34 @@ const Intro = () => {
             <img src={Vector1} alt='vector' />
             <img src={Vector2} alt='vector' />
             <img src={Boy} alt='vector' />
-            <img src={Glassesemoji} alt='emoji' />
-            <div style={{top: '-5%', left: '58%', 
-                // color: darkMode? 'black': ''
-                }}>
+            <motion.img
+                initial={{left: '-36%'}} 
+                whileInView={{left: '-24%'}}
+                whileHover={{left: '-30%'}}
+                transition={transition}
+                src={Glassesemoji} alt='emoji' 
+            />
+            <motion.div 
+                initial={{top: '-5%', left: '74%'}}
+                whileInView={{left: '58%'}}
+                transition={transition} 
+                style={{top: '-5%', left: '58%'}}>
                 <FloatingDiv 
-                image={Crown}
-                txt1 = {'Web'}
-                txt2 = {'Development'} 
-                />
-            </div>            
-            <div style={{bottom: '18%', right: '63%'}}>
+                    image={Crown}
+                    txt1 = {'Web'}
+                    txt2 = {'Development'} />
+            </motion.div>            
+            <motion.div 
+                initial={{left: '9rem', top: '18rem'}}
+                whileInView={{left: '0rem'}}
+                transition={transition}
+                style={{bottom: '18%', right: '63%'}}>
                 <FloatingDiv 
                 image={Thumbup}
                 txt1 = {'UI/UX'}
                 txt2 = {'Design'} 
                 />
-            </div>
+            </motion.div>
             {/*blur divs*/}
             <div className='blur' style={{background: 'rgb(238 210 255)'}}></div>
             <div className='blur' style={{background: '#C1F5FF', top: '17rem', width: '21rem', height: '11rem', left: '-9rem'}}></div>
