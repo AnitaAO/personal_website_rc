@@ -17,7 +17,7 @@ const Services = () => {
     const darkMode = theme.state.darkMode;
 
     return(
-        <div className='services'>
+        <div className='services' id="Services">
             {/*left-side*/}
             <div className='awesome'>
                 <span style={{color: darkMode? 'white': ''}} >
@@ -40,7 +40,7 @@ const Services = () => {
             <div className='cards'>
                 {/* first card */}
                 <motion.div 
-                    whileInView={{left: '19rem'}}
+                    whileInView={{left: '12rem'}}
                     initial={{left: '14%'}}
                     transition={transition}
                     style={{left: '14rem'}}
@@ -53,8 +53,8 @@ const Services = () => {
                 </motion.div>
                 {/* second card */}
                 <motion.div 
-                    initial={{left: '-9rem'}}
-                    whileInView={{left: '14rem'}}
+                    initial={{left: '-5rem', top: '15rem'}}
+                    whileInView={{left: '12rem', top: '16rem'}}
                     transition={transition}
                     style={{top: '12rem', left: '-4rem' }}>
                     <Card
@@ -67,9 +67,9 @@ const Services = () => {
                 {/* third card */}
                 <motion.div 
                     initial={{left: '12rem'}}
-                    whileInView={{left: '-2rem'}}
+                    whileInView={{left: '0rem'}}
                     transition={transition}
-                    style={{top: '19rem', left: '12rem' }}>
+                    style={{top: '10rem', left: '12rem' }}>
                     <Card
                         emoji={Humble}
                         heading={'UI/UX'}

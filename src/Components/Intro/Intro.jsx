@@ -5,10 +5,10 @@ import Instagram from "../../img/instagram.png";
 import LinkedIn from "../../img/linkedin.png";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import Boy from "../../img/boy.png";
+import Me from "../../img/me.png";
 import Thumbup from "../../img/thumbup.png";
 import Crown from "../../img/crown.png";
-import Glassesemoji from "../../img/glassesimoji.png";
+// import Glassesemoji from "../../img/glassesimoji.png";
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
@@ -51,25 +51,27 @@ const Intro = () => {
         <div className="i-right">
             <img src={Vector1} alt='vector' />
             <img src={Vector2} alt='vector' />
-            <img src={Boy} alt='vector' />
+            <img src={Me} alt='vector' />
             <motion.img
                 initial={{left: '-36%'}} 
                 whileInView={{left: '-24%'}}
                 whileHover={{left: '-30%'}}
                 transition={transition}
-                src={Glassesemoji} alt='emoji' 
+                // src={Glassesemoji} alt='emoji' 
             />
-            <motion.div 
-                initial={{top: '-5%', left: '74%'}}
+            <motion.div
+                className='floating-div' 
+                initial={{top: '73%', left: '48%'}}
                 whileInView={{left: '58%'}}
                 transition={transition} 
-                style={{top: '-5%', left: '58%'}}>
+                style={{top: '73%', left: '58%'}}>
                 <FloatingDiv 
                     image={Crown}
                     txt1 = {'Web'}
                     txt2 = {'Development'} />
             </motion.div>            
             <motion.div 
+                className='floating-div'
                 initial={{left: '9rem', top: '18rem'}}
                 whileInView={{left: '0rem'}}
                 transition={transition}

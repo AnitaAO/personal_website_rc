@@ -35,7 +35,7 @@ const Testimonial = () => {
   ]
 
   return (
-    <div className="t-wrapper">
+    <div className="t-wrapper" id='Testimonials'>
 
       {/* the heading */}
       <div className="t-heading">
@@ -56,9 +56,7 @@ const Testimonial = () => {
           return(
             <SwiperSlide
               key={index}>
-              <div className='testimonial'
-                style={{background: darkMode? 'var(--orange)': ''}}
-              >              
+              <div className='testimonial'>              
                 <img src={client.img} alt='client' />
                 <span
                   style={{color: darkMode? 'white': ''}}

@@ -11,13 +11,11 @@ import { motion } from 'framer-motion';
 
 const Works = () => {
 
-    const transition = {duration: 2, type: 'rotate'}
-
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
 
   return (
-    <div className="works">
+    <div className="works" id='Works'>
         {/* this is left side */}
         <div className='awesome w-left'>
             <span style={{color: darkMode? 'white': ''}} 
