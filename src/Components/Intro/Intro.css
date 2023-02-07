@@ -1,9 +1,9 @@
 .intro{
     display: flex;
-    height: 77vh;
+    /* height: 77vh; */
     margin-top: 6rem;
     justify-content: space-between;
-    position: relative;
+    /* position: relative; */
     
 }
 
@@ -106,6 +106,7 @@
     filter: blur(72px);
 }
 
+
 @media screen and (max-width: 480px){
     .intro{
         display: flex;
@@ -129,14 +130,14 @@
         display: none;
     }
     .floating-div:nth-of-type(2){
-        top: 21rem!important;
-        left: 3rem!important;
+        top: 21rem;
+        left: 3rem;
         width: 10rem;
     }
 
     .floating-div:nth-of-type(1){
-        top: 21rem!important;
+        top: 21rem;
         width: 12rem;
-        left: 15rem!important;
+        left: 15rem;
     }
 }

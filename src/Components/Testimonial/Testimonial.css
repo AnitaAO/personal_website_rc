@@ -92,7 +92,9 @@
         flex-direction: column;
         gap: 0.15rem;
     }
-    
 
-    
+    .t-wrapper .swiper{
+        margin-top: 2rem;
+    }
+        
 }
