@@ -32,3 +32,11 @@
     color: #5290FD;
     border-radius: 0.8rem;
 }
+
+@media screen and (max-width: 480px) {
+    .card{
+        width: auto!important;
+        left: 0rem!important;
+
+    }
+}

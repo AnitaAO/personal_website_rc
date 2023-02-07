@@ -1,13 +1,14 @@
 .services{
-    padding: 0 3rem 0 3rem;
+    padding: 0 6rem 0 6rem;
     display: flex;
-    height: 90vh;
-    margin-bottom: 13rem;
-    margin-top: 9rem;
+    flex-direction: row;
+    /* height: 90vh; */
+    margin-top: 8rem;
 }
 
 .cards{
     position: relative;
+    flex: 1;
 }
 
 .cards>*{
@@ -37,12 +38,13 @@
     font-weight: normal;
     color: var(--gray);
     margin-top: 1rem;
+    
 }
 
 .s-button{
     width: 8rem;
     height: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .s-blur1{
@@ -53,4 +55,63 @@
 .s-blur2{
     left: 14rem;
     top: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+    .services{
+        margin-top: 34rem;
+        padding: 0;
+        flex-direction: column;
+        gap: 4rem;
+        height: auto!important;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        gap: 3rem;
+        /* align-items: center; */
+    }
+   .cards >*{
+    position: relative;
+   }
+
+   .motion-div{
+    position: static;
+    width: auto;
+   }
+
+   .motion-div:nth-last-child(1){
+    position: absolute;
+    /* margin-top: 15rem; */
+    width: auto;
+   }
+
+   .motion-div:nth-last-of-type(2){
+    position: absolute;
+    /* margin-top: 15rem; */
+    /* width: auto; */
+   }   
+   
+   .motion-div:nth-last-of-type(3){
+    margin-top: 10rem;
+    position: absolute;
+    width: auto;
+   }
+   /* .cards>.card:nth-of-type(1){
+    position: absolute;
+   } 
+   
+   .cards>.card:nth-of-type(2){
+    position: absolute;
+    margin-top: 3rem;
+   }   
+   
+   .cards>.card:nth-of-type(3){
+    position: absolute;
+    margin-top: 30rem;
+    left: 20rem;
+   } */
+
+    
 }

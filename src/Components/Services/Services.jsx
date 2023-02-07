@@ -28,7 +28,7 @@ const Services = () => {
                     style={{color: darkMode? '#fbfafa': ''}}
                 >
                     I help product owners achieve their
-                    <br /> 
+                    {/* <br />  */}
                     dreams!
                 </span>
                 <a href={Resume} download>
@@ -39,7 +39,8 @@ const Services = () => {
             {/*right-side*/}
             <div className='cards'>
                 {/* first card */}
-                <motion.div 
+                <motion.div
+                    className="motion-div" 
                     whileInView={{left: '12rem'}}
                     initial={{left: '14%'}}
                     transition={transition}
@@ -48,11 +49,12 @@ const Services = () => {
                     <Card 
                         emoji = {HeartEmoji}
                         heading = {'Design'}
-                        details = {'Figma, Photoshop, Canva'}
+                        details = {'Figma, Photoshop, Canva, Illustrator' }
                     />
                 </motion.div>
                 {/* second card */}
                 <motion.div 
+                    className="motion-div"
                     initial={{left: '-5rem', top: '15rem'}}
                     whileInView={{left: '12rem', top: '16rem'}}
                     transition={transition}
@@ -65,7 +67,8 @@ const Services = () => {
                 </motion.div>
 
                 {/* third card */}
-                <motion.div 
+                <motion.div
+                    className="motion-div" 
                     initial={{left: '12rem'}}
                     whileInView={{left: '0rem'}}
                     transition={transition}

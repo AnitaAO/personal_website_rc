@@ -18,8 +18,13 @@ const Portfolio = () => {
     <div className="portfolio" id='Portfolio'>
 
       {/* header */}
-      <span style={{color: darkMode? 'white' : ''}}>Recent projects</span>
-      <span>Portfolio</span>
+      <div className='header-span'>
+        <span style={{color: darkMode? 'white' : ''}}>Recent projects</span>
+        <span>Portfolio</span>
+      </div>
+      {/* <span style={{color: darkMode? 'white' : ''}}>Recent projects</span>
+      <span>Portfolio</span> */}
+
 
       {/* slider */}
       <Swiper

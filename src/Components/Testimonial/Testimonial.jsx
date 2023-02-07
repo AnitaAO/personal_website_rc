@@ -42,9 +42,9 @@ const Testimonial = () => {
         <span>What clients</span>
         <span>are saying</span>
         <span>about me...</span>
-        <div className="blur t-blur1" style={{background: 'var(--purple)'}}></div>
-        <div className="blur t-blur2" style={{background: 'skyblue'}}></div>
       </div>
+      <div className="blur t-blur1" style={{background: 'var(--purple)'}}></div>
+      <div className="blur t-blur2" style={{background: 'skyblue'}}></div>
 
       {/* the slider */}
       <Swiper
