@@ -112,15 +112,7 @@
     .intro{
         flex-direction: column;
         height: 54rem;
-        /* gap: 2rem; */
-    }
-
-    /* .i-left{
-        gap: 1rem;
-    } */
-
-    .i-icons{
-        margin-top: 0rem;
+        gap: 7rem;
     }
 
     .i-right{
@@ -128,6 +120,7 @@
         left: -4.5rem;
         top: -4.5rem;
     }
+    
     .i-right .blur{
         display: none;
     }

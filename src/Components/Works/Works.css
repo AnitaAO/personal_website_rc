@@ -2,9 +2,9 @@
     /* padding: 0 3rem 0 3rem; */
     display: flex;
     flex-direction: row;
-    height: 288vh;
+    height: 200vh;
     /* gap: 3rem; */
-    margin-top: 6rem;
+    margin-top: 9rem;
 }
 
 .w-left{
