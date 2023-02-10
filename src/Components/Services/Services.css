@@ -59,21 +59,19 @@
 
 @media screen and (max-width: 480px) {
     .services{
-        margin-top: 34rem;
+        margin-top: 0rem;
         padding: 0;
         flex-direction: column;
-        gap: 4rem;
-        height: auto!important;
+        gap: 5rem;
+        height: 66rem;
     }
     .cards{
         display: flex;
         flex-direction: column;
-        width: 360px;
-        gap: 3rem;
-        /* align-items: center; */
+        width: 17rem;
     }
    .cards >*{
-    position: relative;
+    position: static;
    }
 
    .motion-div{

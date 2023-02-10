@@ -80,8 +80,9 @@
 
 @media screen and (max-width: 480px) {
     .t-wrapper{
-        margin-top: 6rem;
+        margin-top: 0rem;
         padding: 0;
+        height: 184vh;
     }
 
     .t-heading{
