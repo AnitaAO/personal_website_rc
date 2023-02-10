@@ -96,15 +96,26 @@
 
 @media screen and (max-width: 480px) {
     .works{
-        display: flex;
         flex-direction: column;
         gap: 3rem;
-        /* padding: 2rem; */
+        padding: 0;
+        height: 50rem;
     }
 
     .w-right{
-        transform: scale(0.75);
-        right: 6rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        transform: scale(0.7);
+        /* right: 6rem; */
+    }
+
+    .w-mainCircle{
+        position: static;
+    }
+
+    .w-backCircle{
+        left: 8rem;
     }
     
 }
