@@ -2,7 +2,7 @@ import React from 'react';
 import './Testimonial.css'
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
-import profilePics1 from '../../img/profile1.jpg';
+import profilePics1 from '../../img/ceoenenaturals.png';
 import profilePics2 from '../../img/profile2.jpg';
 import profilePics3 from '../../img/profile3.jpg';
 import profilePics4 from '../../img/profile4.jpg';
@@ -18,19 +18,19 @@ const Testimonial = () => {
 
   const clients = [
     { img: profilePics1,
-      review: 'I am first client'
+      review: 'I recommend your services to anyone who is looking for a good job well done and timely too.'
     },
     {
       img: profilePics2,
-      review: 'I am second client'
+      review: 'I am impressed by the quality of design you offer and professionalim.'
     },
     {
       img: profilePics3,
-      review: 'I am third client'
+      review: 'I was always skeptic about referring pepole but you have proved you are reliable over and over.'
     },
     {
       img: profilePics4,
-      review: 'I am first client'
+      review: 'You take ownership seriously and I must commend your efforts.'
     }
   ]
 
@@ -56,7 +56,7 @@ const Testimonial = () => {
           return(
             <SwiperSlide
               key={index}>
-              <div className='testimonial'>              
+              <div className='testimonial' style={{justifyContent: 'center', textAlign: 'center'}}>              
                 <img src={client.img} alt='client' />
                 <span
                   style={{color: darkMode? 'white': ''}}

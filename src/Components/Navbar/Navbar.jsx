@@ -30,7 +30,9 @@ const Navbar = () => {
                         </Link>
                     </ul>
                 </div>
-                <button className="button n-button">Contact</button>
+                <Link spy={true} smooth={true} to='Contact' offset={50} duration={500}>
+                    <button className="button n-button">Contact</button>
+                </Link>
             </div>
         </div>
     )

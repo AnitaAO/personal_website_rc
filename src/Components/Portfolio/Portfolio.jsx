@@ -3,8 +3,8 @@ import './Portfolio.css';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import Sidebar from '../../img/sidebar.png';
-import Ecommerce from '../../img/ecommerce.png';
-import HOC from '../../img/hoc.png';
+import Nvrates from '../../img/nvrates.png';
+import Quikr from '../../img/quikr.png';
 import MusicApp from '../../img/musicapp.png';
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
@@ -38,10 +38,10 @@ const Portfolio = () => {
           <img src={Sidebar} alt='sidebar' />
         </SwiperSlide>
         <SwiperSlide>  
-          <img src={Ecommerce} alt='ecommerce' />
+          <img src={Nvrates} alt='nvrates' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt='hoc' />
+          <img src={Quikr} alt='quikr' />
         </SwiperSlide>
         <SwiperSlide>  
           <img src={MusicApp} alt='music app' />
