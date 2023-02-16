@@ -56,7 +56,7 @@ const Testimonial = () => {
           return(
             <SwiperSlide
               key={index}>
-              <div className='testimonial' style={{justifyContent: 'center', textAlign: 'center', background: 'white'}}>              
+              <div className='testimonial' style={{justifyContent: 'center', textAlign: 'center'}}>              
                 <img src={client.img} alt='client' />
                 <span
                   style={{color: darkMode? 'white': ''}}
