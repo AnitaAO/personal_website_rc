@@ -59,7 +59,11 @@ textarea{
 
     .contact-form>.c-right{
         flex: 1;
-        margin-top: 16rem;
+        margin-top: 18rem;
+        /* transform: scale(0.8); */
+    }
+
+    .c-right>form>.t-input, c-right>form>a-input{
         transform: scale(0.8);
     }
     
