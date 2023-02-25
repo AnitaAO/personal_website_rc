@@ -24,7 +24,7 @@ const Intro = () => {
   return (
     <div className="intro">
         <div className="i-left">
-        <div className="i-name">
+        <div className="i-name" >
                 <span style={{color: darkMode? 'white': ''}} >Hey! I am</span>
                 <span>Amarachi Ajah</span>
                 <span style={{color: darkMode? '#fbfafa': 'black'}}>
