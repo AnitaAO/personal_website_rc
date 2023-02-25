@@ -109,16 +109,19 @@
 
 @media screen and (max-width: 768px){
     .intro{
+        display: flex;
         flex-direction: column;
         /* height: 54rem; */
-        gap: 7rem;
-        margin-top: 4rem;
+        gap: 0rem;
+        margin-top: 6rem;
     }
 
     .i-right{
-        transform: scale(0.5);
+        transform: scale(1);
         /* left: 5rem; */
-        top: -2.5rem;
+        top: 3.5rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .i-icons{
