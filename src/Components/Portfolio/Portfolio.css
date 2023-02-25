@@ -46,10 +46,17 @@
     border-radius: 1rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .portfolio{
-        margin-top: 0rem;
+        margin-top: -20rem;
         padding: 0;
-        height: 250vh;
-    }    
+        /* height: 250vh; */
+    } 
+    
+    .portfolio-slider{
+        width: 100vw;
+        flex: 1;
+        padding-right: 29rem;
+
+    }
 }

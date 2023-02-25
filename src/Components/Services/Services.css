@@ -1,18 +1,9 @@
 .services{
-    padding: 0 6rem 0 6rem;
+    /* padding: 0 6rem 0 6rem; */
     display: flex;
     flex-direction: row;
     /* height: 90vh; */
-    margin-top: 8rem;
-}
-
-.cards{
-    position: relative;
-    flex: 1;
-}
-
-.cards>*{
-    position: absolute;
+    margin-top: 10rem;
 }
 
 .awesome{
@@ -37,9 +28,19 @@
     font-size: 1rem;
     font-weight: normal;
     color: var(--gray);
-    margin-top: 1rem;
-    
+    margin-top: 1rem;   
 }
+
+.cards{
+    position: relative;
+    flex: 1;
+}
+
+.cards>*{
+    position: absolute;
+}
+
+
 
 .s-button{
     width: 8rem;
@@ -57,39 +58,57 @@
     top: 8rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .services{
-        margin-top: 0;
+        margin-top: 8rem!important;
         padding: 0;
         flex-direction: column;
-        gap: 5rem;
-        height: 74rem;
+        /* justify-content: center;
+        align-items: center; */
+        /* gap: 5rem; */
+        /* height: 74rem; */
+        position: relative;
+    }
+    .awesome{
+        flex: 1;
+        margin-top: 10rem;
+        position: absolute;
     }
     .cards{
+        position: absolute;
         display: flex;
+        float: 1;
         flex-direction: column;
-        /* width: 17rem; */
+        margin-top: 26rem;
+        /* width: 400px; */
     }
    .cards >*{
-    position: static;
+    position: absolute;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: -8.5rem; */
+    /* position: static; */
    }
 
    .motion-div{
-    position: static;
+    /* position: static; */
     width: auto;
    }
 
    .motion-div:nth-of-type(1){
     width: auto;
+    margin-left: -5rem;
    }
 
    .motion-div:nth-of-type(2){
-    margin-top: 16rem; 
-    width: auto; 
+    margin-top: 2rem; 
+    width: auto;
    }    
    
    .motion-div:nth-of-type(3){
-    margin-top: 17rem;
+    margin-top: 24rem;
     width: auto;
+    margin-left: -7.5rem; 
    }       
 }

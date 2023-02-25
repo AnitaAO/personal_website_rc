@@ -94,19 +94,26 @@
     top: 8rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .works{
         flex-direction: column;
-        gap: 3rem;
+        /* gap: 3rem; */
         padding: 0;
-        height: 50rem;
+        /* height: 50rem; */
+        margin-top: -2rem;
+    }
+
+    .w-left{
+        flex: 1;
     }
 
     .w-right{
         display: flex;
+        flex: 1;
         align-items: flex-start;
         justify-content: flex-start;
         transform: scale(0.7);
+        margin-top: 36rem;
         /* right: 6rem; */
     }
 

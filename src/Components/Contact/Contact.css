@@ -41,19 +41,25 @@ textarea{
     left: 8rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .contact-form{
-        margin-top: 6rem;
+        margin-top: -8rem;
         margin-bottom: 8rem;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        /* gap: 2rem; */
         padding: 0;
     }
     .contact-form>.c-left{
         align-items: center;
         text-align: center;
+        flex: 1;
         justify-content: center;
+    }
+
+    .contact-form>.c-right{
+        flex: 1;
+        margin-top: 19rem;
     }
     
 }
