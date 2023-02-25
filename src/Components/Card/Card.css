@@ -39,6 +39,8 @@
         width: 50vw;
         position: static;
         padding: 0 1rem;
-        /* left: -10rem; */
+        justify-content: center;
+        vertical-align: middle;
+        margin-left: 10rem!important;
     }
 }

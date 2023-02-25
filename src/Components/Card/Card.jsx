@@ -12,6 +12,7 @@ const Card = ({emoji, heading, details}) => {
     <div 
       className="card"
       style={{left: '14rem'}}
+      // style={{justifyContent: 'center'}}
     >
         <img src={emoji} alt='emoji'/>
         <span>{heading}</span>
