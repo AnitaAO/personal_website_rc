@@ -117,9 +117,10 @@
     }
 
     .i-right{
-        transform: scale(1);
+        transform: scale(1.2);
         /* left: 5rem; */
-        top: 3.5rem;
+        top: 1.5rem;
+        left: -3rem;
         justify-content: center;
         align-items: center;
     }
