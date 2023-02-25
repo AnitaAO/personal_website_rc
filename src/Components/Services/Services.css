@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 768px) {
     .services{
-        margin-top: 8rem!important;
+        margin-top: 20rem;
         padding: 0;
         flex-direction: column;
         /* justify-content: center;
