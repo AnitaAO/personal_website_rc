@@ -47,7 +47,7 @@
 @media screen and (max-width: 768px) {
     .experience{
         margin-top: 85rem;
-        /* gap: 3rem; */
+        gap: -2rem;
         transform: scale(0.75);
     }    
 }
