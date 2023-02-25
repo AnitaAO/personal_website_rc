@@ -27,7 +27,7 @@ const Intro = () => {
         <div className="i-name">
                 <span style={{color: darkMode? 'white': ''}} >Hey! I am</span>
                 <span>Amarachi Ajah</span>
-                <span style={{color: darkMode? '#fbfafa': ''}}>
+                <span style={{color: darkMode? '#fbfafa': 'black'}}>
                     I specialise in digital product design and 
                     front-end web development. I am a multidisciplinary 
                     and talented Nigerian based in Lagos. I am passionate 

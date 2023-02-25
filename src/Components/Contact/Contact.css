@@ -60,6 +60,7 @@ textarea{
     .contact-form>.c-right{
         flex: 1;
         margin-top: 19rem;
+        transform: scale(0.8);
     }
     
 }
